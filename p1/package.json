@@ -1,0 +1,11 @@
+{
+  "name": "p1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"cd posts && npm start & cd comments && npm start & cd query && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
