@@ -1,0 +1,29 @@
+apiVersion: skaffold/v2beta28 
+kind: Config 
+
+deploy: 
+  kubectl:
+    manifests:
+      - ./kube/k8s/*.yaml
+
+build:
+  local:
+    push: true
+  artifacts:
+    - image: ayushtiwari26/express1
+      context: kube/express/express1/
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: '*.js'
+    - image: ayushtiwari26/express2
+      context: kube/express/express2/
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: '*.js'
+      
