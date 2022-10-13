@@ -19,8 +19,7 @@
 	"remoteUser": "vscode",
 	"features": {
 		"docker-in-docker": "latest",
-		"kubectl-helm-minikube": "latest",
-		"git": "latest",
+		"kubectl-helm-minikube": "1.22",
 		"node": "lts"
 	}
 }

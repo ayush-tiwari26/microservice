@@ -35,5 +35,5 @@ spec:
   ports: 
     - name: express-1-cluster-ip
       protocol: TCP
-      port: 8081
+      port: 80
       targetPort: 4001
